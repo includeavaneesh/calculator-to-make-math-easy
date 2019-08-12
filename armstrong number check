@@ -1,0 +1,22 @@
+"""ARMSTRONG NUMBER"""
+
+num=int(input("Enter a number:-\t"))
+t=num
+sum=0
+strnum=str(num)
+
+length=len(strnum)
+
+while num>0:
+    
+    sum=sum+(num%10)**length
+    num=num/10
+    
+    
+if sum==t:
+    print("The input is an ARMSTRONG NUMBER!!!")
+    
+else:
+    print("The input is not an ARMSTRONG NUMBER!!!")
+
+
